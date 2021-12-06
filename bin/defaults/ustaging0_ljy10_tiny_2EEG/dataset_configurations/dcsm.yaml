@@ -1,0 +1,57 @@
+train_data:
+  data_dir: ../datasets/processed/dcsm/views/fixed_split/train
+  period_length_sec: 30
+  identifier: "TRAIN"
+  psg_regex: .*[.]h5
+  hyp_regex: .*[.]ids
+
+val_data:
+  data_dir: ../datasets/processed/dcsm/views/fixed_split/val
+  period_length_sec: 30
+  identifier: "VAL"
+  psg_regex: .*[.]h5
+  hyp_regex: .*[.]ids
+
+test_data:
+  data_dir: ../datasets/processed/dcsm/views/fixed_split/test
+  period_length_sec: 30
+  identifier: "TEST"
+  psg_regex: .*[.]h5
+  hyp_regex: .*[.]ids
+
+set_sample_rate: 128
+
+#select_channels: [
+#'C4-M1', 'E1-M2'
+#]
+
+# https://www.sohu.com/a/292374688_120051769
+# 脑电导联的组合推荐采用C4-M1，F4-M1，O2-M1进行记录；
+#  推荐导联的备份导联采用C3-M2，F3-M2，O1-M2进行记录；
+#  可接受导联为FZ-CZ，CZ-OZ，C4-M1。
+#  推荐将接地电极放置于Fpz位置及其附近，将参考电极放置于Cz位置。
+#  如果在监测期间电极出现故障，备份电极应放置在Fpz、C3、O1和M2；允许以Fpz代替Fz，C3替代Cz或C4、O1替代Oz，M2替代M1。
+load_time_channel_sampling_groups: [
+#  ['C3-M2', 'C4-M1', 'F4-M1'],
+#  ['O2-M1', 'O1-M2', 'F3-M2']
+   ['C4-M1'],
+   ['F4-M1', 'C3-M2']
+]
+
+sleep_stage_annotations:
+  W: 0
+  N1: 2
+  N2: 3
+  N3: 4
+  REM: 1
+  UNKNOWN: 5
+
+strip_func:
+  strip_func: strip_to_match
+
+quality_control_func:
+  quality_control_func: "clip_noisy_values"
+  min_max_times_global_iqr: 20
+  
+scaler: "RobustScaler"
+batch_wise_scaling: false
