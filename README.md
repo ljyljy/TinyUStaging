@@ -3,7 +3,7 @@
 
 ### TinyUStaging: An Efficient Model for Sleep Staging with Single-Channel EEG and EOG
 
-![image-20220921113347382](README.assets/image-20220921113347382.png)
+![image-20220921113347382](https://s2.loli.net/2022/09/21/s4P8HuF7lTgWO5p.png)
 
 - See HD figure in `supplementary_materials\Figures\FigS1.tif`
 
@@ -18,7 +18,7 @@
 
 - Schematic illustration of our TinyUStaging workflow
 
-  ![](./supplementary_materials/Figures/FigS1_2.png)
+  ![](https://s2.loli.net/2022/09/21/uUevaWczIrKCVBm.png)
 
   - **Data.** We selected any combination of 'EEG+EOG'. 
   - **Cross-validation**. we applied *5-fold subject-wise cross-validation* on seven datasets totaling above 750G, in each fold, *75%, 10%, and 15%* of the data were utilized to train, validate and evaluate the model. 
@@ -31,15 +31,15 @@
 
 ##### Overall 
 
-![](./supplementary_materials/Figures/FigS3.png)
+![](https://s2.loli.net/2022/09/21/KXW5T138QnYMOaB.png)
 
 ###### CSJA block
 
-<img src="./supplementary_materials/Figures/Fig2.png" style="zoom: 50%;" />
+<img src="https://s2.loli.net/2022/09/21/KGH7fSiJPvr5YeU.png" style="zoom: 50%;" />
 
 ###### SE block
 
-<img src="README.assets/image-20220921114210287.png" alt="image-20220921114210287" style="zoom: 30%;" />
+<img src="https://s2.loli.net/2022/09/21/PjIeqL2WwsOGo39.png" alt="image-20220921114210287" style="zoom: 30%;" />
 
 #### Results
 
@@ -47,8 +47,8 @@
 
 - See `supplementary_materials\paper_plot`
 - *e.g.* Case **SC4191E0** in **Sleep-EDF**
-  - <img src="README.assets/image-20220921114512898.png" alt="image-20220921114512898" style="zoom: 50%;" />
-  - <img src="README.assets/image-20220921114529993.png" alt="image-20220921114529993" style="zoom: 33%;" />
+  - <img src="https://s2.loli.net/2022/09/21/j2bSOfcekYM8uG1.png" alt="image-20220921114512898" style="zoom: 50%;" />
+  - <img src="https://s2.loli.net/2022/09/21/oTEmFOuGrpwxCfc.png" alt="image-20220921114529993" style="zoom: 33%;" />
 
 ##### Dataset-wise
 
@@ -58,7 +58,7 @@
 
 - Results with seven **highly heterogeneous**
 
-  - ###### <img src="README.assets/image-20220921114922524.png" alt="image-20220921114922524" style="zoom:50%;" />
+  - <img src="https://s2.loli.net/2022/09/21/H7g5kEuTrsFqaLw.png" alt="image-20220921114922524" style="zoom:50%;" />
 
   - For more visualization results, see our paper and project folders `supplementary_materials`
 
