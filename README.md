@@ -46,6 +46,11 @@
 ##### Subject-wise
 
 - See `supplementary_materials\paper_plot`
+- *e.g.* Case **tpf435cf71_2574_49b2_bad0_5feceaa69d23** in **DCSM**
+  - See `supplementary_materials\paper_plot\pro44\test_data\dcsm\plots`
+  - <img src="https://s2.loli.net/2022/09/21/RMmwQOv5P9WH1Uq.png" alt="image-20220921160250353" style="zoom: 50%;" />
+  - <img src="https://s2.loli.net/2022/09/21/WSfdznRmpFaQNJY.png" alt="image-20220921160213160" style="zoom: 33%;" />
+
 - *e.g.* Case **SC4191E0** in **Sleep-EDF**
   - <img src="https://s2.loli.net/2022/09/21/j2bSOfcekYM8uG1.png" alt="image-20220921114512898" style="zoom: 50%;" />
   - <img src="https://s2.loli.net/2022/09/21/oTEmFOuGrpwxCfc.png" alt="image-20220921114529993" style="zoom: 33%;" />
@@ -58,7 +63,7 @@
 
 - Results with seven **highly heterogeneous**
 
-  - <img src="https://s2.loli.net/2022/09/21/H7g5kEuTrsFqaLw.png" alt="image-20220921114922524" style="zoom:50%;" />
+  - <img src="https://s2.loli.net/2022/09/21/H7g5kEuTrsFqaLw.png" alt="image-20220921114922524" style="zoom: 33%;" />
 
   - For more visualization results, see our paper and project folders `supplementary_materials`
 
